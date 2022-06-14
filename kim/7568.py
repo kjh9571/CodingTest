@@ -15,6 +15,7 @@ for i in dungchi_list:
         else:
             if i[0] < j[0] and i[1] < j[1]: # 비교 대상인 덩치 데이터가 더 작을 경우
                 rank += 1
+    #print(rank+1, end=' ')
     rank_list.append(rank+1) # 랭크 리스트에 덩치 랭크 입력
 
 print(' '.join(map(str, rank_list))) # 랭크 리스트를 빈칸으로 구분해서 출력
